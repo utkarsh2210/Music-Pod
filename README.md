@@ -7,6 +7,8 @@
 1. React JS
 2. Firebase cloud storage (to store songs).
 
+## Screenshots
+<img src="https://github.com/utkarsh2210/Music-Pod/blob/master/public/scr1.PNG" width=800px><br><br><img src="https://github.com/utkarsh2210/Music-Pod/blob/master/public/scr5.PNG" width=400px height=680px><img src="https://github.com/utkarsh2210/Music-Pod/blob/master/public/scr2.PNG" width=400px height=680px><img src="https://github.com/utkarsh2210/Music-Pod/blob/master/public/scr3.PNG" width=400px height=680px><img src="https://github.com/utkarsh2210/Music-Pod/blob/master/public/scr4.PNG" width=400px height=680px><img src="https://github.com/utkarsh2210/Music-Pod/blob/master/public/scr6.PNG" width=400px height=680px><img src="https://github.com/utkarsh2210/Music-Pod/blob/master/public/scr7.PNG" width=400px height=680px><img src="https://github.com/utkarsh2210/Music-Pod/blob/master/public/scr8.PNG" width=400px height=680px>
 
 # Getting Started with Create React App
 
