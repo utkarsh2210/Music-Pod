@@ -10,6 +10,14 @@
 ## Screenshots
 <img src="https://github.com/utkarsh2210/Music-Pod/blob/master/public/scr1.PNG" width=800px><br><br><img src="https://github.com/utkarsh2210/Music-Pod/blob/master/public/scr5.PNG" width=400px height=680px><img src="https://github.com/utkarsh2210/Music-Pod/blob/master/public/scr2.PNG" width=400px height=680px><img src="https://github.com/utkarsh2210/Music-Pod/blob/master/public/scr3.PNG" width=400px height=680px><img src="https://github.com/utkarsh2210/Music-Pod/blob/master/public/scr4.PNG" width=400px height=680px><img src="https://github.com/utkarsh2210/Music-Pod/blob/master/public/scr6.PNG" width=400px height=680px><img src="https://github.com/utkarsh2210/Music-Pod/blob/master/public/scr7.PNG" width=400px height=680px><img src="https://github.com/utkarsh2210/Music-Pod/blob/master/public/scr8.PNG" width=400px height=680px>
 
+
+## Features
+1. ZingTouch has been integrated to provide swipe based operations. You can scroll over the 4 buttons in the circular portion to navigate through the menu
+2. Firebase Storage is used. Songs are streamed from Google's high speed Firebase Storage.
+3. Lightening fast React JS based app.
+4. More songs can be added to the database as and when required.
+5. Songs can be switched using the left and right arrow buttons provided in the Circular Actions Button Section thereby eliminating the hassle to go back to the playlist time and again.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
