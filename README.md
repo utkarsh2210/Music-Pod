@@ -5,7 +5,7 @@
 ## Tools Used
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" width=200px><img src="https://miro.medium.com/max/1024/1*oT_l6QxMdTN65-0gwFqeNg.png" width=300px>
 1. React JS
-2. Firebase cloud storage (to store songs).
+2. Firebase cloud storage
 
 ## Screenshots
 <img src="https://github.com/utkarsh2210/Music-Pod/blob/master/public/scr1.PNG" width=800px><br><br><img src="https://github.com/utkarsh2210/Music-Pod/blob/master/public/scr5.PNG" width=400px height=680px><img src="https://github.com/utkarsh2210/Music-Pod/blob/master/public/scr2.PNG" width=400px height=680px><img src="https://github.com/utkarsh2210/Music-Pod/blob/master/public/scr3.PNG" width=400px height=680px><img src="https://github.com/utkarsh2210/Music-Pod/blob/master/public/scr4.PNG" width=400px height=680px><img src="https://github.com/utkarsh2210/Music-Pod/blob/master/public/scr6.PNG" width=400px height=680px><img src="https://github.com/utkarsh2210/Music-Pod/blob/master/public/scr7.PNG" width=400px height=680px><img src="https://github.com/utkarsh2210/Music-Pod/blob/master/public/scr8.PNG" width=400px height=680px>
@@ -17,6 +17,14 @@
 3. Lightening fast React JS based app.
 4. More songs can be added to the database as and when required.
 5. Songs can be switched using the left and right arrow buttons provided in the Circular Actions Button Section thereby eliminating the hassle to go back to the playlist time and again.
+
+## How to use?
+1. In the group of circular action buttons section (See the screenshots), there is the menu button. Left and right buttons are navigation buttons(to navigate in All songs only). The bottom-most button is the Play/Pause button to stop or play the current song.
+2. To navigate in the menu, just swipe clockwise if you want to select an item which is available below the currently selected item. And similarly, swipe anti-clockwise if you want to select an item which is available above the currently selected item. <b>( Press & hold the right click of your mouse while swiping, otherwise the swipe feature wouldn't work). </b>
+3. Go to All Songs in the Music Section to view a list of all songs available currently on the Cloud Storage. (Make sure you are connected to the internet).
+4. To play a song or to select a section from the list of Sections in the menu, click the "Select" button. 
+5. To change a song, click on the left or right arrow buttons.
+6. Songs can be found in the Music/All Songs Section. All other pages are dummy pages for illustration purposes.
 
 # Getting Started with Create React App
 
