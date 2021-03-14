@@ -1,13 +1,399 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  margin: 1% auto 0px auto;
+  width: min-content;
+  padding: 20px 10px 5px 10px;
+  border-radius: 15px;
+  background-image: url("https://images.unsplash.com/photo-1525352265139-caa4490ea6d0?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80");
+  box-shadow: 0px 0px 12px 4px black;
+  background-size: cover;
+  position: relative;
+}
+
+/******************************* MAIN SCREEN *********************************/
+.main-screen-container {
+  width: 350px;
+  height: 350px;
+  margin: 0px auto;
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/848/93/234/bob-marley-4k-hd-background-wallpaper-preview.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  border-radius: 20px;
+  transition: transform ease-in-out 0.2s;
+}
+
+/******************************* DIFFERENT BUTTONS *********************************/
+.buttons-container {
+  width: 260px;
+  height: 260px;
+  border: 1px solid grey;
+  margin: 12px auto 0px auto;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(90, 90, 90);
+  transition: transform ease-in-out 0.2s;
+}
+
+.menu-button {
+  position: absolute;
+  top: 0px;
+  height: 25%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-weight: bold;
+  border: none;
+  background-color: transparent;
+  color: rgb(209, 208, 208);
+}
+
+.right-button {
+  position: absolute;
+  right: 0px;
+  width: 25%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0% 37% 37% 0%;
+  font-size: 25px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: rgb(209, 208, 208);
+}
+
+.play-pause {
+  position: absolute;
+  bottom: 0px;
+  height: 25%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 0% 37% 37%;
+  font-size: 25px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: rgb(209, 208, 208);
+}
+
+.center-button {
+  width: 50%;
+  height: 50%;
+  background-color: black;
+  border-radius: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  outline: none;
+  border: none;
+}
+
+.left-button {
+  position: absolute;
+  left: 0px;
+  width: 25%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 37% 0% 0% 37%;
+  font-size: 25px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: rgb(209, 208, 208);
+}
+
+/******************************* MAIN MENU BOX *********************************/
+.main-menu-box {
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  z-index: 5;
+  left: 0%;
+  background-color: rgb(255, 244, 223);
+  box-shadow: none;
+  overflow-x: hidden;
+  transition: width ease-in-out 0.2s;
+}
+
+.box-width-change {
+  width: 50% !important;
+  box-shadow: 0px 0px 12px 1px rgb(82, 82, 82) !important;
+}
+
+.main-menu-box > div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 15%;
+  padding: 0 0 0 10px;
+  box-sizing: border-box;
+  white-space: nowrap; /* to turn off text wrapping in the screen menu */
+}
+
+.main-menu-box p {
+  font-size: 17px;
+  overflow-wrap: normal;
+  display: flex;
+  justify-content: flex-start;
+  width: 90%;
+  height: 65%;
+  padding: 5px;
+  align-items: center;
+}
+
+.main-menu-box div > .selected-div {
+  background-color: rgb(218, 31, 31);
+}
+
+.main-menu-box div > .selected-div::after {
+  content: ">";
+  font-size: 1.5rem;
+  position: absolute;
+  right: 25px;
+}
+
+.app-name {
+  background-color: black;
+  color: white;
+  font-size: large;
+  height: 25% !important;
+  justify-content: center;
+}
+
+/******************************* ALL SCREENS *********************************/
+
+.screen-Game,
+.screen-Setting,
+.screen-Gallery,
+.screen-music {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.screen-music {
+  background-image: url("https://images.unsplash.com/photo-1529058837434-d26624857f39?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8bmlnaHQlMjBza3klMjB5ZWxsb3d8ZW58MHwyfDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+}
+
+/******************************* SONGS LIST DIV *********************************/
+.all-songs {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(52, 58, 64);
+  box-sizing: border-box;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
+.all-songs-heading {
+  padding-bottom: 10px;
+  background-color: #8b0410;
+  position: fixed;
+  margin: 0px;
+  height: 38px;
+  width: 21.9rem;
+  color: wheat;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.all-songs-list {
+  background-color: #343a40;
+  margin-top: 14%;
+  height: 86%;
+}
+.all-songs-list > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(0, 0, 0);
+  width: 1005;
+  height: 14%;
+  color: white;
+}
+
+.selected-song {
+  background-color: rgb(57, 199, 235);
+}
+
+/******************************* SONG PLAYER SCREEN *********************************/
+.screen-music > h2 {
+  background-color: transparent;
+  margin: 0px;
+  margin-bottom: 10px;
+  padding: 10px;
+  color: #e7daa7;
+}
+
+.song-image {
+  width: 50%;
+  height: 50%;
+  margin-left: auto;
+  box-shadow: 0px 0px 12px 5px grey;
+  margin-right: auto;
+  border-radius: 15px;
+}
+
+/* Setting audio element's color to orange */
+audio::-webkit-media-controls-panel {
+  background-color: #ae4b14;
+}
+
+.song-image > img {
+  border-radius: inherit;
+  height: 100%;
+  width: 100%;
+}
+
+#audio {
+  outline: none;
+}
+
+.player-miscellaneous-buttons > p {
+  margin: 0px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5px;
+  box-sizing: border-box;
+  color: #e6ddb6;
+}
+
+/******************************* ARTISTS & ALBUMS SCREEN *********************************/
+
+.screen-Artists,
+.screen-Albums {
+  background-color: white;
+  opacity: 0.9;
+  width: 100%;
+  height: 100%;
+}
+
+/******************************* LOADER *********************************/
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid black; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.loading-screen {
+  background-color: white;
+  opacity: 0.9;
+  width: 100%;
+  height: 100%;
+}
+
+.loading-screen h1 {
+  margin: 0px;
+  font-size: 50px;
+}
+
+/******************************* SCREENS WITH IMAGES/LOGOS *********************************/
+.screen-Game > div {
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+}
+.screen-Game h1 {
+  margin: 0px;
+}
+.screen-Game > div > img {
+  padding: 30px 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.screen-Setting > h1 {
+  margin: 0px;
+}
+.screen-Setting > div {
+  height: 160px;
+  width: 160px;
+  margin: 0 auto;
+}
+.screen-Setting > div > img {
+  height: 100%;
+  width: 100%;
+  padding: 50px 0px;
+}
+
+.screen-Gallery > h1 {
+  margin: 0px;
+}
+.screen-Gallery > div {
+  height: 170px;
+  width: 170px;
+  margin: 0 auto;
+}
+.screen-Gallery > div > img {
+  padding: 50px 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.screen-Artists > h1 {
+  margin: 0px;
+}
+.screen-Artists > div {
+  height: 160px;
+  width: 160px;
+  margin: 0 auto;
+}
+.screen-Artists > div > img {
+  padding: 55px 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.screen-Albums > h1 {
+  margin: 0px;
+}
+.screen-Albums > div {
+  height: 130px;
+  width: 130px;
+  margin: 0 auto;
+}
+.screen-Albums > div > img {
+  padding: 60px 0px;
+  height: 100%;
+  width: 100%;
 }
