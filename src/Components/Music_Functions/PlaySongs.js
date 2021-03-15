@@ -30,9 +30,9 @@ class Songs extends React.Component {
         </div>
         <div className="player-miscellaneous-buttons">
           <p>
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-list"></i>
-            <i class="fas fa-info-circle"></i>
+            <i className="fas fa-heart"></i>
+            <i className="fas fa-list"></i>
+            <i className="fas fa-info-circle"></i>
           </p>
         </div>
       </div>

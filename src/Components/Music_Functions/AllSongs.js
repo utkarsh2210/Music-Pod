@@ -59,7 +59,7 @@ class AllSongs extends React.Component {
       <div className="loading-screen">
         <h1>Loading...</h1>
         <div className="loader"></div>
-        <div>
+        <div className="loading-text">
           Depending upon your Internet Speed, fetching the data might take some
           time.
         </div>

@@ -24,7 +24,7 @@ const MenuItems = ({ mainMenuItems, selectedItem }) => {
       {mainMenuItems.length === 4 || mainMenuItems.length === 3 ? (
         <div style={{ color: "black" }}>
           <p style={{ fontSize: 12, fontWeight: "bold" }}>
-            <i class="far fa-copyright"></i>
+            <i className="far fa-copyright"></i>
             <span style={{ padding: 5 }}>Made By Utkarsh</span>
           </p>
         </div>

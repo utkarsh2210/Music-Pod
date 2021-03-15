@@ -258,23 +258,31 @@ class App extends React.Component {
   };
 
   render() {
+    const {
+      selected_Item_Index,
+      showPage,
+      menuItems,
+      current_Song,
+      songIndex,
+    } = this.state;
+
     return (
       <div className="App">
         <MainScreen
-          selectedItem={this.state.selected_Item_Index}
-          showPage={this.state.showPage}
-          mainMenuItems={this.state.menuItems}
-          currentSongSelection={this.state.current_Song}
-          songIndex={this.state.songIndex}
+          selectedItem={selected_Item_Index}
+          showPage={showPage}
+          mainMenuItems={menuItems}
+          currentSongSelection={current_Song}
+          songIndex={songIndex}
           onPlaySongsScreen={this.onPlaySongsScreen}
           playPauseButtonClicked={this.playPauseButtonClicked}
         />
         <Buttons
           menuButtonClicked={this.menuButtonClicked}
-          selectButtonClicked={this.selectButtonClicked}
-          leftButtonClicked={this.leftButtonClicked}
           rightButtonClicked={this.rightButtonClicked}
           playPauseButtonClicked={this.playPauseButtonClicked}
+          leftButtonClicked={this.leftButtonClicked}
+          selectButtonClicked={this.selectButtonClicked}
         />
       </div>
     );
